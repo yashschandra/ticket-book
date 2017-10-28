@@ -1,0 +1,38 @@
+chrome.runtime.onMessage.addListener(function(message, sender, response){
+	var scriptOption=message.scriptOption;
+	var btn=document.getElementById('validate');
+	var flag=true;
+	for(var i=0; i<scriptOption.name.length; i++){
+		var row=document.getElementById('addPassengerForm:psdetail:'+i);
+		row.cells[1].getElementsByTagName('input')[0].value=scriptOption.name[i];
+		row.cells[2].getElementsByTagName('input')[0].value=scriptOption.age[i];
+		row.cells[3].getElementsByTagName('select')[0].value=scriptOption.gender[i];
+		row.cells[4].getElementsByTagName('select')[0].value=scriptOption.berth[i];
+	}
+	while(flag){
+		flag=false;
+		try{
+			var cap1=document.getElementsByName('nlpAnswer')[0];
+			if(cap1.getAttribute('type')=='hidden'){
+				throw 'cap 1 hidden';
+			}
+			cap1.setAttribute('value', scriptOption.cap);
+		}
+		catch(err){
+			console.log('cap1 not found.');
+			try{
+				var cap2=document.getElementsByName('j_captcha')[0];
+				if(cap2.getAttribute('type')=='hidden'){
+					throw 'cap 2 hidden';
+				}
+				cap2.setAttribute('value', scriptOption.cap);
+			}
+			catch(err){
+				console.log('cap2 not found.');
+				document.getElementsByClassName('nlpRefresh')[0].click();
+				flag=true;
+			}
+		}
+	}
+	btn.click();
+});

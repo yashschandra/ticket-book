@@ -1,0 +1,83 @@
+<html>
+	<body>
+		<div id="detailsForm">
+			User:<input type="text" id="user" value=""/>
+			Pass:<input type="password" id="pass" value=""/>
+			From:<select id="from">
+				<option value="JABALPUR - JBP">JBP</option>
+				<option value="JHANSI JN - JHS">JHS</option>
+				<option value="H NIZAMUDDIN - NZM">NZM</option>
+			</select>
+			To:<select id="to">
+				<option value="JABALPUR - JBP">JBP</option>
+				<option value="JHANSI JN - JHS">JHS</option>
+				<option value="H NIZAMUDDIN - NZM">NZM</option>
+			</select>
+			Date:<input type="text" id="dt" value=""/>
+			Train:<input type="text" id="train" value=""/>
+			Coach:<input type="text" id="coach" value=""/>
+			Quota:<select id="quota">
+				<option value="GN">GN</option>
+				<option value="TQ">TQ</option>
+			</select>
+			<div id="passenger">
+				Name:<input type="text" name="name"/>
+				Age:<input type="text" name="age"/>
+				Gender:<select name="gender">
+					<option value="M">M</option>
+					<option value="F">F</option>
+				</select>
+				Berth:<select name="berth">
+					<option value="MB">MB</option>
+					<option value="UB">UB</option>
+					<option value="LB">LB</option>
+					<option value="SL">SL</option>
+					<option value="SU">SU</option>
+				</select>
+				<button id="add">Add</button>
+			</div>
+			Mobile:<input type="text" id="mobile"/>
+			Card:<input type="text" id="card" value=""/>
+			Month:<select id="month">
+				<option value="01">01</option>
+				<option value="02">02</option>
+				<option value="03">03</option>
+				<option value="04">04</option>
+				<option value="05">05</option>
+				<option value="06">06</option>
+				<option value="07">07</option>
+				<option value="08">08</option>
+				<option value="09">09</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+			</select>
+			Year:<select id="year">
+				<option value="17">2017</option>
+				<option value="18">2018</option>
+				<option value="19">2019</option>
+				<option value="20">2020</option>
+				<option value="21">2021</option>
+				<option value="22">2022</option>
+				<option value="23">2023</option>
+				<option value="24">2024</option>
+				<option value="25">2025</option>
+				<option value="26">2026</option>
+				<option value="27">2027</option>
+				<option value="28">2028</option>
+				<option value="29">2029</option>
+				<option value="30">2030</option>
+				<option value="31">2031</option>
+				<option value="32">2032</option>
+				<option value="33">2033</option>
+				<option value="34">2034</option>
+				<option value="35">2035</option>
+			</select>
+			Cvv:<input type="password" id="cvv" value=""/>
+			<button id="save">Save</button>
+		</div>
+	</body>
+	<script src="data.js"></script>
+	<script src="../data1.js"></script>
+	<script src="popup.js"></script>
+</html>

@@ -1,0 +1,15 @@
+var stationData=['JABALPUR - JBP', 'JHANSI JN - JHS', 'H NIZAMUDDIN - NZM'];
+
+document.addEventListener('DOMContentLoaded', function(){
+	var from=document.getElementById('from');
+	var to=document.getElementById('to');
+	console.log(from, to);/*
+	for(i=0; i<stationData.length; i++){
+		var opt=document.createElement('OPTION');
+		opt.value=stationData[i];
+		opt.innerHTML=stationData[i];
+		from.appendChild(opt);
+		to.appendChild(opt);
+		console.log(i, from, to);
+	}*/
+});

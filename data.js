@@ -1,0 +1,19 @@
+var data={};
+
+data['user']='<USERNAME>';
+data['pass']='';
+data['from']='H NIZAMUDDIN - NZM';
+data['to']='JABALPUR - JBP';
+data['dt']='<DATE FORMAT-DD-MM-YYYY>';
+data['train']='<TRAIN NO>';
+data['coach']='SL';
+data['quota']='GN';
+data['name']='<NAME>';
+data['age']='<AGE>';
+data['gender']='M';
+data['berth']='UB';
+data['mobile']='<MOBILE>';
+data['card']='<CARD NO>';
+data['month']='<MONTH>';
+data['year']='<YEAR>';
+data['cvv']='';
