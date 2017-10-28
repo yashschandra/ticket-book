@@ -1,0 +1,5 @@
+#!/bin/bash
+
+DIR=$(pwd)
+pkill chrome
+google-chrome --load-extension="$DIR" 
